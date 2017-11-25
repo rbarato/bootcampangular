@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <h1>Chat</h1>
+
+  <p>Bem-vindo(a) {{usuario | uppercase}}</p>
+  <p>Logado em: {{logTime | date:"dd/MM/yyyy HH:mm" }}</p>
+
+  <a [routerLink]="'/sobre'">Sobre</a>
+  <a [routerLink]="'/chat'">Chat</a>
+</div>
