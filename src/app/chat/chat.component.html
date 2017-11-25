@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="jumbotron">
+    <h1>Chat</h1>
+  </div>
+
+  <ul class="list-group">
+      <app-chat-item *ngFor="let msg of mensagens" [mensagem]="msg"></app-chat-item>
+  </ul>
+
+  <textarea placeholder="Insira sua mensagem aqui" [(ngModel)]="mensagemInserir" #textField rows="10"></textarea>
+  <button class="btn btn-primary" (click)="enviaMensagem()">Enviar</button>
+</div>
